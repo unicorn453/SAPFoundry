@@ -24,3 +24,13 @@ annotate SAPFoundryService with @requires :
     'authenticated-user',
     'ExternalUser'
 ];
+
+entity ExternalPartners as
+        projection on my.ExternalPartners;
+
+
+
+annotate my.ExternalPartners with @search : {
+  defaultSearchElement : 'Name',
+  searchable : ['Name', 'City', 'Email']
+};

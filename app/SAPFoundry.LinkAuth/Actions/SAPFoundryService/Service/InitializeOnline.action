@@ -1,9 +1,0 @@
-{
-    "Service": "/LinkAuth/Services/SAPFoundryService.service",
-    "_Type": "Action.Type.ODataService.Initialize",
-    "ShowActivityIndicator": true,
-    "OnFailure": "/LinkAuth/Actions/SAPFoundryService/Service/InitializeOnlineFailureMessage.action",
-    "ActionResult": {
-        "_Name": "init"
-    }
-}
