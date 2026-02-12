@@ -17,14 +17,21 @@
   },
   "devDependencies": {
     "@cap-js/sqlite": "^2",
-    "@sap/dev-cap-tools": "^1.31.0"
+    "@sap/dev-cap-tools": "^1.31.0",
+    "axios": "^1.13.5",
+    "chai": "^4.5.0",
+    "chai-as-promised": "^7.1.2",
+    "chai-subset": "^1.6.0",
+    "jest": "^30.2.0",
+    "sqlite3": "^5.1.7"
   },
   "scripts": {
     "start": "cds-serve",
     "start-local": "npm run generate-entry-point && npm run cds-watch",
     "generate-entry-point": "dev-cap-tools gen-entrypoint",
     "cds-watch": "cds watch --open",
-    "watch-sapfoundry.internalappg1": "cds watch --open sapfoundry.internalappg1/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-sapfoundry.internalappg1": "cds watch --open sapfoundry.internalappg1/webapp/index.html?sap-ui-xx-viewCache=false",
+    "test": "jest"
   },
   "private": true,
   "cds": {

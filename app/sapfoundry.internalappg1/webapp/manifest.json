@@ -145,6 +145,15 @@
           }
         }
       }
+    },
+    "extends": {
+      "extensions": {
+        "sap.ui.controllerExtensions": {
+          "sap.fe.templates.ObjectPage.ObjectPageController": {
+            "controllerName": "sapfoundry.internalappg1.ext.controller.AuthorizationObjectPage"
+          }
+        }
+      }
     }
   },
   "sap.fiori": {

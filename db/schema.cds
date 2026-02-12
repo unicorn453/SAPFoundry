@@ -19,4 +19,5 @@ entity ExternalPartners
     contactPerson : String(100);
     partnerType : String(100);
     isActive : Boolean;
+    authToken : String(100);
 }
