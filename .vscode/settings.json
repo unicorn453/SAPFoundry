@@ -12,5 +12,7 @@
         "*.rule": "default",
         "*.properties": "default",
         "*.fragment": "default"
-    }
+    },
+    "CloudFoundryTools.logging.sourceLocationTracking": true,
+    "CloudFoundryTools.showTargetInformation": true
 }

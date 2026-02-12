@@ -13,7 +13,7 @@ service SAPFoundryService
     )
     returns ExternalPartners;
 
-    function Select
+    function SelectDropdown
     (
     )
     returns ExternalPartners;

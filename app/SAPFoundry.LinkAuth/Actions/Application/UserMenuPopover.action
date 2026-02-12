@@ -3,13 +3,6 @@
 	"PopoverItems": [
 		{
 			"Enabled": true,
-			"Icon": "sap-icon://headset",
-			"OnPress": "/LinkAuth/Actions/Application/NavToSupport.action",
-			"Title": "Support",
-			"Visible": true
-		},
-		{
-			"Enabled": true,
 			"Icon": "sap-icon://refresh",
 			"OnPress": "/LinkAuth/Actions/Application/AppUpdateProgressBanner.action",
 			"Title": "Check for Updates",
@@ -39,14 +32,14 @@
 		{
 			"Title": "Documents",
 			"Icon": "",
-			"Styles": {
-				"Title": "AuthenticateUsers",
-				"Icon": ""
-			},
 			"OnPress": "",
 			"Visible": true,
 			"Enabled": true,
-			"TextAlignment": "Left"
+			"TextAlignment": "Left",
+			"Styles.Icon": "",
+			"Styles": {
+				"Title": "AuthenticateUsers"
+			}
 		}
 	]
 }
