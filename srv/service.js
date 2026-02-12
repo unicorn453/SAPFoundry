@@ -8,7 +8,8 @@ const generateauthtoken_Logic = require('./code/generateauthtoken-logic');
 class SAPFoundryService extends LCAPApplicationService {
     async init() {
 
-        this.on('GenerateAuthToken', async (request) => {
+        // Register GenerateAuthToken as a bound action on ExternalPartners
+        this.on('GenerateAuthToken', 'ExternalPartners', async (request) => {
             return generateauthtoken_Logic(request);
         });
 

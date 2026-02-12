@@ -61,7 +61,7 @@ annotate service.ExternalPartners with @(
     UI.Identification            : [{
         $Type : 'UI.DataFieldForAction',
         Label : 'Generate Auth Token',
-        Action: 'SAPFoundryService.GenerateAuthToken'
+        Action: 'SAPFoundryService.ExternalPartners/GenerateAuthToken'
     }],
 
     UI.LineItem                  : [
