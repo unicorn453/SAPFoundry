@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title> Project Preview </title>
+    <title> Application Overview </title>
     <script src="https://ui5.sap.com/1.136.9/resources/sap-ui-core.js" 
             id="sap-ui-bootstrap"
             data-sap-ui-theme="sap_horizon"
@@ -27,7 +27,7 @@
                     return Controller.extend("PreviewController", {
                         onInit: function () {
 
-                            const data = {"Services":[{"ServiceName":"my_namespace.MyService","DetailsURL":"./odata/v4/my/","Metadata":"./odata/v4/my/$metadata","Entities":[{"Name":"Workers","URL":"./odata/v4/my/Workers","FioriURL":"$fiori-preview/my_namespace.MyService/Workers#preview-app"},{"Name":"ExternalPartners","URL":"./odata/v4/my/ExternalPartners","FioriURL":"$fiori-preview/my_namespace.MyService/ExternalPartners#preview-app"},{"Name":"Documents","URL":"./odata/v4/my/Documents","FioriURL":"$fiori-preview/my_namespace.MyService/Documents#preview-app"}],"EntitiesCount":3}]}
+                            const data = {"Services":[{"ServiceName":"SAPFoundryService","DetailsURL":"./service/SAPFoundryService/","Metadata":"./service/SAPFoundryService/$metadata","Entities":[{"Name":"ExternalPartners","URL":"./service/SAPFoundryService/ExternalPartners","FioriURL":""}],"EntitiesCount":1}]}
                             this.getView().setModel(new JSONModel(data));
                         }
                     });

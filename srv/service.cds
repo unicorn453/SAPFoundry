@@ -1,17 +1,26 @@
-using { SAPFoundry as my } from '../db/schema';
+using { cuid } from '@sap/cds/common';
 
-@path: '/service/SAPFoundryService'
-service SAPFoundryService {
+namespace my_namespace;
 
-    @odata.draft.enabled
-    entity ExternalPartners
-        as projection on my.ExternalPartners
-        actions {
-            action GenerateAuthToken() returns ExternalPartners;
-        };
-
-    action SelectPartner() returns ExternalPartners;
-    function SelectDropdown() returns ExternalPartners;
+entity Workers : cuid {
+  name : String;
+  // other properties
 }
 
-annotate SAPFoundryService with @requires: ['authenticated-user', 'ExternalUser'];
+entity ExternalPartners : cuid {
+  name : String;
+  // other properties
+}
+
+entity Documents : cuid {
+  title : String;
+  content : LargeBinary;
+  worker : Association to Workers;
+  externalPartner : Association to ExternalPartners;
+}
+
+service MyService {
+  entity Workers as projection on my_namespace.Workers;
+  entity ExternalPartners as projection on my_namespace.ExternalPartners;
+  entity Documents as projection on my_namespace.Documents;
+}

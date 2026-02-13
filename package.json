@@ -23,15 +23,16 @@
     "chai-as-promised": "^7.1.2",
     "chai-subset": "^1.6.0",
     "jest": "^30.2.0",
-    "sqlite3": "^5.1.7"
+    "sqlite3": "^5.1.7",
+    "cds-plugin-ui5": "^0.13.0"
   },
   "scripts": {
     "start": "cds-serve",
     "start-local": "npm run generate-entry-point && npm run cds-watch",
     "generate-entry-point": "dev-cap-tools gen-entrypoint",
     "cds-watch": "cds watch --open",
-    "watch-sapfoundry.internalappg1": "cds watch --open sapfoundry.internalappg1/webapp/index.html?sap-ui-xx-viewCache=false",
-    "test": "jest"
+    "test": "jest",
+    "watch-external-partner-documents": "cds watch --open externalpartnerdocuments/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "private": true,
   "cds": {
@@ -52,6 +53,9 @@
   },
   "lcap": true,
   "sapux": [
-    "app/sapfoundry.internalappg1"
+    "app/external-partner-documents"
+  ],
+  "workspaces": [
+    "app/*"
   ]
 }

@@ -1,2 +1,6 @@
 
-using from './sapfoundry.internalappg1/annotations';
+
+
+
+
+using from './external-partner-documents/annotations';

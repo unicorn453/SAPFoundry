@@ -1,0 +1,32 @@
+{
+    "version": "0.2",
+    "floorplan": "FE_LROP",
+    "project": {
+        "name": "external-partner-documents",
+        "targetFolder": "/home/user/projects/SAPFoundry",
+        "title": "External Partner Documents",
+        "description": "Manage documents associated with external partners",
+        "ui5Version": "1.136.0",
+        "localUI5Version": "1.82.2",
+        "sapux": true
+    },
+    "service": {
+        "servicePath": "/odata/v4/my/",
+        "capService": {
+            "projectPath": "/home/user/projects/SAPFoundry",
+            "serviceName": "my_namespace.MyService",
+            "serviceCdsPath": "srv/service"
+        }
+    },
+    "entityConfig": {
+        "mainEntity": {
+            "entityName": "ExternalPartners"
+        },
+        "generateLROPAnnotations": true
+    },
+    "projectTemplateType": "LIST_REPORT_OBJECT_PAGE",
+    "telemetryData": {
+        "generationSourceName": "AI Headless",
+        "generationSourceVersion": "1.20.2"
+    }
+}

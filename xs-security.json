@@ -1,6 +1,21 @@
 {
-  "scopes": [],
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.ExternalUser",
+      "description": "ExternalUser"
+    }
+  ],
   "attributes": [],
-  "role-templates": [],
-  "authorities-inheritance": false
+  "role-templates": [
+    {
+      "name": "ExternalUser",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.ExternalUser"
+      ],
+      "attribute-references": []
+    }
+  ],
+  "xsappname": "SAPFoundry",
+  "tenant-mode": "dedicated"
 }
